@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get in Touch — Clean Line Ski</title>
+  <meta name="description" content="Enquire about a Clean Line Ski trip. Tell us about your skiing and which trip interests you — we'll get back to you within 48 hours." />
+  <link rel="canonical" href="https://cleanlineski.co.uk/contact.html" />
+
+  <!-- OG / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Get in Touch — Clean Line Ski" />
+  <meta property="og:description" content="Enquire about a Clean Line Ski trip. We'll get back to you within 48 hours." />
+  <meta property="og:url" content="https://cleanlineski.co.uk/contact.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Get in Touch — Clean Line Ski" />
+  <meta name="twitter:description" content="Enquire about a Clean Line Ski trip." />
+
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; form-action https://formspree.io; connect-src https://formspree.io;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="site-header scrolled" role="banner">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Clean Line Ski home">
+        <img src="images/footer_logo.webp" alt="Clean Line Ski" class="logo-light" />
+        <img src="images/logo.webp" alt="Clean Line Ski" class="logo-dark" />
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="about.html">About</a>
+        <a href="trips.html">Trips</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <a href="about.html">About</a>
+    <a href="trips.html">Trips</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero hero--text-only" aria-label="Page header" style="padding-top: 5rem;">
+      <div class="hero__content">
+        <span class="label">Make an Enquiry</span>
+        <h1>Get in Touch</h1>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Info -->
+          <div class="contact-info fade-in">
+            <span class="label">Before You Enquire</span>
+            <h2>We Want to Hear From You</h2>
+            <p>There's no commitment at this stage — just a conversation. Tell us which trip interests you and a bit about your skiing background and we'll get back to you within 48 hours.</p>
+            <p>We take enquiries seriously. If you're a good fit for the trip, we'll say so. If you're not quite there yet or the dates don't work, we'll tell you that too — honestly.</p>
+            <p style="margin-bottom: 0.2rem;">If you'd prefer to email directly:</p>
+            <a href="mailto:info@cleanlineski.co.uk" class="contact-email">info@cleanlineski.co.uk</a>
+
+            <div style="margin-top: 2.5rem; padding: 1.5rem; background: var(--surface); border-radius: 2px; border: 1px solid var(--border);">
+              <h4 style="margin-bottom: 0.6rem; font-size: 0.75rem;">What Happens Next</h4>
+              <ul class="who-list" style="margin-top: 0;">
+                <li>We review your enquiry and respond within 48 hours</li>
+                <li>If it's a good fit, we'll confirm availability and next steps</li>
+                <li>No payment until you decide to proceed</li>
+                <li>A deposit holds your space once you're confirmed</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="fade-in">
+            <form id="contact-form" action="https://formspree.io/f/XXXXXXXX" method="POST" novalidate>
+
+              <div class="form-group">
+                <label for="name">Full Name <span aria-hidden="true" style="color: var(--blue);">*</span></label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true" style="color: var(--blue);">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number <span style="color: var(--mid); font-weight: 400; text-transform: none; letter-spacing: 0;">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+44 7700 000000" />
+              </div>
+
+              <div class="form-group">
+                <label for="trip">Trip Interest <span aria-hidden="true" style="color: var(--blue);">*</span></label>
+                <select id="trip" name="trip" required>
+                  <option value="" disabled selected>Select a trip…</option>
+                  <option value="verbier">Verbier — February 2026</option>
+                  <option value="valdisere">Val d'Isère — March 2026</option>
+                  <option value="both">Both / Unsure</option>
+                  <option value="future">Future trips (register interest)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="ability">Skiing Ability <span aria-hidden="true" style="color: var(--blue);">*</span></label>
+                <select id="ability" name="ability" required>
+                  <option value="" disabled selected>Select your level…</option>
+                  <option value="confident-intermediate">Confident Intermediate (strong reds)</option>
+                  <option value="advanced">Advanced (comfortable on blacks)</option>
+                  <option value="expert">Expert (off-piste experience)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="about">About Your Skiing <span aria-hidden="true" style="color: var(--blue);">*</span></label>
+                <textarea id="about" name="about" required placeholder="Tell us about your skiing background — where you've skied, what kind of terrain you typically ski, any off-piste experience, etc."></textarea>
+                <p class="form-note">Be as specific as you like — it helps us understand whether the trip is right for you.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="referral">How Did You Hear About Us?</label>
+                <select id="referral" name="referral">
+                  <option value="" disabled selected>Select one…</option>
+                  <option value="search">Google / Search engine</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="friend">Friend or recommendation</option>
+                  <option value="skiing-forum">Skiing forum or community</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn--primary">Send Enquiry</button>
+              </div>
+
+              <div id="form-msg" class="form-msg" role="alert" aria-live="polite"></div>
+
+              <p class="compliance-text">By submitting this form you consent to Clean Line Ski contacting you in relation to your enquiry. We will not share your details with third parties. Read our <a href="terms.html" style="color: var(--blue);">Terms &amp; Conditions</a> for full details.</p>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="/" class="footer-logo" aria-label="Clean Line Ski home">
+          <img src="images/footer_logo.webp" alt="Clean Line Ski" />
+        </a>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/">Home</a>
+          <a href="about.html">About</a>
+          <a href="trips.html">Trips</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Clean Line Ski. All rights reserved.</p>
+        <p class="footer-compliance">Flights and travel to resort are not included, arranged, or provided by Clean Line Ski. All guests are responsible for their own travel arrangements and travel insurance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
