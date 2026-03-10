@@ -158,7 +158,7 @@ p:last-child { margin-bottom: 0; }
   justify-content: space-between;
 }
 
-.nav-logo img { height: 40px; width: auto; }
+.nav-logo img { height: 60px; width: auto; }
 
 /* Logo swap: light logo on dark hero, dark logo on white scrolled nav */
 .nav-logo .logo-light { display: block; }
@@ -666,7 +666,7 @@ p:last-child { margin-bottom: 0; }
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-.footer-logo img { height: 36px; width: auto; opacity: 0.9; }
+.footer-logo img { height: 60px; width: auto; opacity: 0.9; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.8rem; }
 .footer-links a {
   font-family: 'Raleway', sans-serif;
