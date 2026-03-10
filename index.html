@@ -3,22 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clean Line Ski — Premium Ski Trips for Serious Skiers</title>
-  <meta name="description" content="Small-group, guided ski trips to Verbier and Val d'Isère for confident and advanced skiers. Early starts, no compromise, no crowds." />
-  <link rel="canonical" href="https://cleanlineski.co.uk/" />
-
-  <!-- OG / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Clean Line Ski — Premium Ski Trips for Serious Skiers" />
-  <meta property="og:description" content="Small-group, guided ski trips to Verbier and Val d'Isère for confident and advanced skiers." />
-  <meta property="og:url" content="https://cleanlineski.co.uk/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Clean Line Ski" />
-  <meta name="twitter:description" content="Small-group ski trips for serious skiers. No queues, no compromise." />
-
-  <!-- Security -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; form-action https://formspree.io; connect-src https://formspree.io;" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Clean Line Ski — Coming Soon</title>
+  <meta name="description" content="Small-group, guided ski trips to Verbier and Val d'Isère for serious skiers. Launching soon." />
+  <meta name="robots" content="noindex" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,175 +13,157 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="css/style.css" />
 
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Clean Line Ski",
-    "url": "https://cleanlineski.co.uk",
-    "description": "Premium small-group ski trips to Verbier and Val d'Isère for confident and advanced skiers.",
-    "email": "info@cleanlineski.co.uk",
-    "areaServed": "GB"
-  }
-  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:        #111111;
+      --blue:       #1666A8;
+      --blue-dark:  #0D4F85;
+      --blue-light: #9fd4ff;
+      --mid:        #6B6B6B;
+      --border:     #2a2a2a;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* subtle grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 3rem;
+    }
+
+    .logo img {
+      height: 56px;
+      width: auto;
+    }
+
+    .label {
+      display: inline-block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    .sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.7;
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: var(--blue);
+      margin: 0 auto 2.5rem;
+    }
+
+    .contact-line {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 0.6rem;
+    }
+
+    .email-link {
+      display: inline-block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--blue-light);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+
+    .email-link:hover {
+      color: #fff;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.2);
+    }
+  </style>
 </head>
 <body>
 
-  <a href="#main" class="skip-link">Skip to content</a>
+  <main>
 
-  <!-- NAV -->
-  <header class="site-header" role="banner">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Clean Line Ski home">
-        <img src="images/footer_logo.webp" alt="Clean Line Ski" class="logo-light" />
-        <img src="images/logo.webp" alt="Clean Line Ski" class="logo-dark" />
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="trips.html">Trips</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="logo">
+      <img src="images/footer_logo.webp" alt="Clean Line Ski" />
     </div>
-  </header>
 
-  <!-- MOBILE NAV -->
-  <nav id="mobile-nav" class="nav-mobile" aria-label="Mobile navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="trips.html">Trips</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <span class="label">Coming Soon</span>
 
-  <main id="main">
+    <h1>Good Skiing Is<br />Hard to Find.</h1>
 
-    <!-- HERO -->
-    <section class="hero" aria-label="Hero">
-      <div class="hero__bg" role="img" aria-label="Skier on pristine alpine terrain"></div>
-      <div class="hero__content">
-        <span class="label">Clean Line Ski</span>
-        <h1>Good Skiing Is<br />Hard to Find…</h1>
-        <p>Small groups. Early starts. Proper terrain. We go where the snow is good and we don't apologise for the 6am alarm.</p>
-      </div>
-    </section>
+    <div class="divider"></div>
 
-    <!-- WHY CLS -->
-    <section class="section" id="why">
-      <div class="container">
-        <div class="why-cls fade-in">
-          <div class="why-cls__text">
-            <span class="label">The Idea</span>
-            <h2>Ski Trips Done Differently</h2>
-            <p>Most ski holidays involve battling lift queues, waiting for stragglers, and spending half the day in a restaurant. Clean Line Ski was built on a different premise: get out early, find the good snow, ski with people who share your standards.</p>
-            <p>We keep groups small, pick our resorts carefully, and run every trip ourselves. No sales team. No junior guides. Just people who love skiing — operating with a bit of obsession.</p>
-            <a href="about.html" class="btn btn--outline">About Us</a>
-          </div>
-          <div class="why-cls__img">
-            <img src="images/hero_image.webp" alt="Clean mountain skiing terrain" loading="lazy" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <p class="sub">Small groups. Early starts. Proper terrain. We're putting the finishing touches on something worth waiting for — check back soon.</p>
 
-    <!-- TRIPS TEASER -->
-    <section class="section" style="background: var(--surface);" id="trips">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="label">2025 / 2026 Season</span>
-          <h2>The Trips</h2>
-          <p>Two trips. Two iconic resorts. Both deliberately small. Both run properly.</p>
-        </div>
-        <div class="trip-cards">
-          <div class="trip-card fade-in">
-            <div class="trip-card__resort">Verbier</div>
-            <div class="trip-card__dates">February 2026 · 7 nights</div>
-            <div class="trip-card__detail">Max 6 skiers · All-mountain / off-piste</div>
-            <div class="trip-card__detail">Advanced / expert level</div>
-            <div class="trip-card__price">From £1,950</div>
-            <a href="trips.html#verbier" class="btn btn--primary">View Trip</a>
-          </div>
-          <div class="trip-card fade-in">
-            <div class="trip-card__resort">Val d'Isère</div>
-            <div class="trip-card__dates">March 2026 · 7 nights</div>
-            <div class="trip-card__detail">Max 6 skiers · All-mountain / off-piste</div>
-            <div class="trip-card__detail">Confident intermediate+ level</div>
-            <div class="trip-card__price">From £1,750</div>
-            <a href="trips.html#valdisere" class="btn btn--primary">View Trip</a>
-          </div>
-          <div class="trip-card fade-in">
-            <div class="trip-card__resort">New for 2027</div>
-            <div class="trip-card__dates">Dates TBC</div>
-            <div class="trip-card__detail">A third resort is in planning</div>
-            <div class="trip-card__detail">Register interest for early access</div>
-            <div class="trip-card__price">TBC</div>
-            <a href="contact.html" class="btn btn--outline">Register Interest</a>
-          </div>
-        </div>
-        <div style="text-align:center; margin-top: 2.5rem;" class="fade-in">
-          <a href="trips.html" class="btn btn--primary">View All Trips</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- MANIFESTO -->
-    <section class="manifesto" aria-label="Manifesto">
-      <div class="manifesto__inner fade-in">
-        <p class="manifesto__quote">"We're not interested in the easy option. We're here for the good skiing — the kind you have to earn."</p>
-        <p class="manifesto__attr">— Clean Line Ski</p>
-      </div>
-    </section>
-
-    <!-- WHO IT'S FOR -->
-    <section class="section" id="who">
-      <div class="container">
-        <div style="max-width: 680px;" class="fade-in">
-          <span class="label">Who It's For</span>
-          <h2>This Trip Is For You If…</h2>
-          <ul class="who-list">
-            <li>You ski confidently on black runs and want more than that</li>
-            <li>You're done with hour-long lift queues and crowded pistes</li>
-            <li>You want to be on the hill by 8am, not at the bottom by 11</li>
-            <li>You ski with a small group of like-minded people, not a coach party</li>
-            <li>You want a trip that's been planned obsessively, not packaged generically</li>
-          </ul>
-          <a href="contact.html" class="btn btn--primary">Make an Enquiry</a>
-        </div>
-      </div>
-    </section>
+    <p class="contact-line">In the meantime, get in touch:</p>
+    <a href="mailto:info@cleanlineski.co.uk" class="email-link">info@cleanlineski.co.uk</a>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <a href="index.html" class="footer-logo" aria-label="Clean Line Ski home">
-          <img src="images/footer_logo.webp" alt="Clean Line Ski" />
-        </a>
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="trips.html">Trips</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-copyright">&copy; 2026/7 Clean Line Ski. All rights reserved.</p>
-        <p class="footer-compliance">Flights and travel to resort are not included, arranged, or provided by Clean Line Ski. All guests are responsible for their own travel arrangements and travel insurance.</p>
-      </div>
-    </div>
+  <footer>
+    &copy; 2026 Clean Line Ski. All rights reserved.
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
