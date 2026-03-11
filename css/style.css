@@ -555,6 +555,31 @@ p:last-child { margin-bottom: 0; }
   font-size: 0.95rem;
 }
 .faq-answer.open { display: block; }
+.faq-answer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.3rem 0 0;
+}
+.faq-answer ul li {
+  padding: 0.25rem 0 0.25rem 1.6rem;
+  position: relative;
+}
+.faq-list--included li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #3a9e5f;
+  font-weight: 700;
+}
+.faq-list--excluded li::before {
+  content: '✕';
+  position: absolute;
+  left: 0;
+  color: #c0392b;
+  font-weight: 700;
+}
+.faq-answer p + ul { margin-top: 0.3rem; }
+.faq-answer ul + p { margin-top: 1.2rem; }
 
 /* ============================================================
    CONTACT
@@ -629,6 +654,7 @@ p:last-child { margin-bottom: 0; }
 .form-msg.error { background: #FDE8E8; color: #C0392B; display: block; }
 
 .compliance-text { font-size: 0.78rem; color: var(--mid); margin-top: 1rem; line-height: 1.5; }
+.compliance-note { font-size: 0.82rem; color: var(--mid); margin-top: 1.2rem; line-height: 1.6; }
 
 /* ============================================================
    TERMS
