@@ -265,6 +265,9 @@ p:last-child { margin-bottom: 0; }
   background-position: center;
   z-index: 0;
 }
+@media (max-width: 768px) {
+  .hero__bg { background-image: url('../images/hero_mobile.webp'); }
+}
 .hero__bg::after {
   content: '';
   position: absolute;

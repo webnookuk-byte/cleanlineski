@@ -26,7 +26,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <!-- Preload hero image so browser fetches it immediately (improves LCP) -->
-  <link rel="preload" as="image" href="images/hero_image.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="images/hero_mobile.webp" fetchpriority="high" media="(max-width: 768px)" />
+  <link rel="preload" as="image" href="images/hero_image.webp" fetchpriority="high" media="(min-width: 769px)" />
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
