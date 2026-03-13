@@ -630,7 +630,7 @@ color: #FFFFFF;
 
 .contact-info h2 { margin-bottom: 1rem; }
 .contact-info p { color: var(--mid); }
-.contact-info .contact-email { display: block; margin-top: 1.5rem; font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1rem; color: var(--blue); letter-spacing: 0.05em; }
+.contact-info .contact-email { display: block; margin-top: 1.5rem; margin-bottom: 2rem; font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1rem; color: var(--blue); letter-spacing: 0.05em; }
 .contact-info .contact-email:hover { color: var(--blue-dark); text-decoration: underline; }
 
 .form-group { margin-bottom: 1.2rem; }
